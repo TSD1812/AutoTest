@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL for 5.1 - course@localhost">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.15">
+    <root id="1">
+      <ServerVersion>0.0</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <database id="2" parent="1" name="course">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="information_schema">
+      <Visible>1</Visible>
+    </database>
+    <database id="4" parent="1" name="mysql">
+      <Visible>1</Visible>
+    </database>
+    <database id="5" parent="1" name="test">
+      <Visible>1</Visible>
+    </database>
+    <schema id="6" parent="2">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="7" parent="6" name="addusercase"/>
+    <table id="8" parent="6" name="getuserinfocase"/>
+    <table id="9" parent="6" name="getuserlistcase"/>
+    <table id="10" parent="6" name="logincase"/>
+    <table id="11" parent="6" name="updateuserinfocase"/>
+    <table id="12" parent="6" name="user"/>
+    <table id="13" parent="6" name="users"/>
+    <column id="14" parent="7" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="7" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="16" parent="7" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="17" parent="7" name="sex">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="18" parent="7" name="age">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="19" parent="7" name="permission">
+      <Position>6</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="20" parent="7" name="isDelete">
+      <Position>7</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="21" parent="7" name="expected">
+      <Position>8</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="22" parent="7" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="23" parent="7" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="8" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="25" parent="8" name="userId">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="26" parent="8" name="expected">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="27" parent="8" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="28" parent="8" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="29" parent="9" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="9" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="31" parent="9" name="age">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="32" parent="9" name="sex">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="33" parent="9" name="expected">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="34" parent="9" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="35" parent="9" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="36" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="37" parent="10" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="38" parent="10" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="39" parent="10" name="expected">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="40" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="10" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="42" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="43" parent="11" name="userId">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="44" parent="11" name="userName">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="45" parent="11" name="sex">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="46" parent="11" name="age">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="47" parent="11" name="permission">
+      <Position>6</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="48" parent="11" name="isDelete">
+      <Position>7</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="49" parent="11" name="expected">
+      <Position>8</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="50" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="51" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="53" parent="12" name="username">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="54" parent="12" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="55" parent="12" name="age">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="56" parent="12" name="sex">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="57" parent="12" name="permission">
+      <Position>6</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="58" parent="12" name="isDelete">
+      <Position>7</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="59" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="61" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="62" parent="13" name="name">
+      <Position>2</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="63" parent="13" name="age">
+      <Position>3</Position>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <column id="64" parent="13" name="sex">
+      <Position>4</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <index id="65" parent="13" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="13" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
